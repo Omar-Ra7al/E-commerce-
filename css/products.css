@@ -1233,15 +1233,15 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .ctegores button.shoes {
-  background-image: url(imgsimgsProduct/shose-5.png);
+  background-image: url(../imgs/imgsProduct/shose-5.png);
 }
 
 .ctegores button.pants {
-  background-image: url(imgsimgsProduct/jogger-pants1.png);
+  background-image: url(../imgs/imgsProduct/jogger-pants1.png);
 }
 
 .ctegores button.Sweatshirts {
-  background-image: url(imgsimgsProduct/white_hoody_sweatshirt_mockup_template.png);
+  background-image: url(../imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png);
 }
 
 .ctegores button:hover {
