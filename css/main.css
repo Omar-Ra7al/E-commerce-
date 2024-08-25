@@ -1,0 +1,845 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Caveat:wght@400..700&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-color);
+  position: relative;
+}
+
+:root {
+  --main-color: #244eef;
+  --secondry-color: #d72d2d;
+  --third-color: #fea300;
+  --fourth-color: #01101d;
+  --five-color: #b2b4c2;
+  --main-transition: 0.3s;
+}
+/*
+567 >> frist screen 
+@media(min-width : 576px){}/* small devices
+
+768 >> sec screen 
+@media(min-width : 768px){}/* meim devices
+
+992 >> third screen 
+@media(min-width : 992px){}/* desktop devices
+
+1200 >> fourth screen 
+@media(min-width : 992px){}/* large devices
+*/
+a {
+  text-decoration: none;
+  color: white;
+}
+button {
+  border: none;
+  outline: none;
+  transition: var(--main-transition);
+}
+button:hover {
+  transform: scale(1.031);
+}
+ul {
+  list-style: none;
+}
+.landing-page {
+  background-color: var(--fourth-color);
+  overflow: hidden;
+}
+@media (max-width: 591px) {
+  .landing-page {
+    min-height: 130vh;
+  }
+}
+/* Navigation */
+nav {
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+}
+.bars {
+  display: none;
+}
+nav .container {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav .logo-links-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.landing-page .logo {
+  /* font-family: "Permanent Marker", cursive;
+  font-weight: bolder;
+  font-style: normal; */
+  font-family: "Briem Hand", cursive;
+  font-size: 25px;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+.landing-page .logo span {
+  color: var(--secondry-color);
+  font-weight: bolder;
+  font-size: 25px;
+}
+.landing-page .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.landing-page .links li a {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  transition: var(--main-transition);
+}
+.landing-page .links li a:hover {
+  color: var(--third-color);
+}
+.landing-page .login button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.landing-page .login button:last-child {
+  background-color: var(--secondry-color);
+  color: white;
+  margin-left: 10px;
+}
+
+/* Nav Qeyrey */
+@media (max-width: 881px) {
+  .landing-page .links {
+    display: none;
+    overflow: hidden;
+    animation: fadeInDown 0.3s ease forwards; /* Apply animation */
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px); /* Initial position */
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Final position */
+    }
+  }
+
+  .landing-page .links.active {
+    display: block;
+    overflow: scroll;
+    scrollbar-width: none;
+    min-height: 370px;
+    opacity: 1;
+    visibility: visible;
+    top: 70px;
+    right: 44px;
+    opacity: 1;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    text-align: center;
+    width: 250px;
+    padding: 20px;
+    padding-bottom: 50px;
+    background-color: var(--third-color);
+    background-color: var(--main-color);
+    border-radius: 20px;
+    border-top-right-radius: 0;
+  }
+
+  .landing-page .links li {
+    transition: var(--main-transition);
+    width: fit-content;
+    margin: -20px auto 0;
+  }
+  .landing-page .links li a {
+    color: #fff;
+    font-weight: 400;
+  }
+  .landing-page .links li:hover {
+    font-weight: 500;
+    padding-left: 5px;
+  }
+  nav .login button {
+    display: none;
+  }
+  .landing-page .login button {
+    padding: 7px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  nav .login button.active {
+    animation: fadeIn 1.5s forwards;
+    display: block;
+  }
+  nav .login.active {
+    animation: fadeIn 1.5s forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 70px;
+    top: 320px;
+    z-index: 2;
+    width: 200px;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .bars {
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .landing-page .login button:last-child {
+    margin-left: 0px;
+  }
+}
+/* End Nav */
+
+/* Start Wrapper Right Side */
+.wrapper {
+  color: white;
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.wrapper .wrapper-text {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  letter-spacing: 1.1px;
+}
+
+.wrapper .wrapper-text .main-text {
+  width: 80%;
+  font-size: 70px;
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 771px) {
+  .wrapper .wrapper-text .main-text {
+    width: 100%;
+  }
+}
+
+.wrapper .wrapper-text .wrapper-statics {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.wrapper .wrapper-text .wrapper-statics .box {
+  width: 20%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .wrapper .wrapper-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  .wrapper .wrapper-text .main-text {
+    margin-bottom: 0;
+    font-size: 55px;
+  }
+  .wrapper .wrapper-text .wrapper-statics {
+    align-items: start;
+    gap: 20px;
+  }
+  .wrapper .wrapper-text .wrapper-statics .box {
+    width: 40%;
+  }
+}
+.wrapper .wrapper-text .wrapper-statics .box h2 {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.wrapper .wrapper-text .wrapper-statics .box h3 span {
+  color: var(--third-color);
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.wrapper .wrapper-text .wrapper-statics .box p {
+  font-size: 13px;
+  line-break: auto;
+  font-weight: 300;
+}
+/* End Wrapper left Side  */
+
+/* Start Image side Right */
+.wrapper .wrapper-img {
+  width: 35%;
+  position: relative;
+}
+
+.wrapper .wrapper-img .img-holder {
+  width: 90%;
+  height: 100%;
+  padding-inline-start: 10px;
+  margin: 0 auto;
+}
+
+.wrapper .wrapper-img .img-holder .bg-img {
+  position: absolute;
+  bottom: -120px;
+  background-image: linear-gradient(
+    10deg,
+    var(--main-color) 0%,
+    var(--main-color) 10%,
+    var(--main-color) 15%,
+    #42698c 25%,
+    #8294aa 60%,
+    #42698c 70%,
+    #01101d 95%,
+    #01101d 100%
+  );
+  height: 450px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.wrapper .wrapper-img .img-holder img {
+  width: 100%;
+  margin-bottom: -85px;
+}
+/* End image styling inide image wrapper */
+
+/* Motivation Box */
+.wrapper-img .motivate {
+  position: absolute;
+  background-color: var(--third-color);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #000;
+  left: -100px;
+  top: 10px;
+  z-index: 3;
+}
+.wrapper-img .motivate h2 {
+  font-size: 50px;
+  font-style: italic;
+}
+.wrapper-img .motivate::after {
+  content: "Super";
+  position: absolute;
+  background-color: #fe7062;
+  padding: 5px 25px;
+  color: white;
+  border-radius: 20px;
+  top: -10px;
+  left: -20px;
+}
+/* Motivation Box */
+
+/* Shirt Box */
+.wrapper-img .shirt {
+  position: absolute;
+  width: 130px;
+  height: 170px;
+  background-color: var(--secondry-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  right: -80px;
+  bottom: 20px;
+  z-index: 3;
+}
+.wrapper-img .shirt .price {
+  position: absolute;
+  background-color: white;
+  padding: 7px 15px;
+  color: #000;
+  border-radius: 5px;
+  bottom: -10px;
+  left: -20px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.wrapper-img .shirt .price span {
+  color: var(--secondry-color);
+}
+.wrapper-img .shirt img {
+  max-width: 60%;
+}
+/* Shirt Box */
+
+/* Start Popup >> motivate and shirt img */
+
+/* We do new elemnet cuz the main elemnt take more positon we cannot change in outher medias */
+.popUp {
+  display: none;
+  width: 100%;
+  height: 30%;
+  position: relative;
+  padding: 40px 0;
+  height: 50%;
+  text-align: center;
+}
+
+.popUp .motivate {
+  background-color: var(--third-color);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 15px;
+  height: 100px;
+  color: #000;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.popUp .motivate h2 {
+  font-size: 40px;
+  font-style: italic;
+}
+.popUp .motivate p {
+  text-align: center;
+  width: 70%;
+}
+.popUp .motivate::after {
+  content: "Super";
+  position: absolute;
+  background-color: #fe7062;
+  padding: 5px 25px;
+  color: white;
+  border-radius: 20px;
+  top: -20px;
+  right: -20px;
+}
+
+.popUp .shirt {
+  width: 130px;
+  min-height: 170px;
+  background-color: var(--secondry-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+.popUp .shirt .price {
+  position: absolute;
+  background-color: white;
+  padding: 7px 15px;
+  color: #000;
+  border-radius: 5px;
+  bottom: -10px;
+  left: -20px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.popUp .shirt .price span {
+  color: var(--secondry-color);
+}
+.popUp .shirt img {
+  max-width: 60%;
+}
+
+/* End Popup >> motivate and shirt img */
+
+/* Media Queries */
+@media (max-width: 881px) {
+  .logo {
+    width: 50%;
+  }
+  .bars {
+    width: 50%;
+    text-align: end;
+  }
+
+  .landing-page {
+    position: relative;
+  }
+
+  .wrapper-img {
+    display: none;
+  }
+
+  .wrapper-text {
+    min-width: 100%;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .wrapper-text .main-text {
+    min-width: 100%;
+  }
+
+  .popUp {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper .wrapper-text .main-text {
+    min-width: 80%;
+
+    font-size: 50px;
+  }
+  .wrapper .wrapper-text .wrapper-statics .box h2 {
+    font-size: 30px;
+  }
+
+  .popUp .motivate h2 {
+    font-size: 50px;
+  }
+  .popUp .motivate::after {
+    padding: 5px 20px;
+  }
+
+  .popUp .shirt {
+    width: 120px;
+    min-height: 160px;
+  }
+  .popUp .shirt .price {
+    position: absolute;
+    background-color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .wrapper-text {
+    padding: 0;
+  }
+  .wrapper .wrapper-text .main-text {
+    font-size: 40px;
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  .wrapper .wrapper-text .wrapper-statics .box {
+    width: 100%;
+  }
+
+  .popUp .motivate p {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+  }
+}
+/* End Wrapper Right Side*/
+
+/* Start Best Customers */
+.products-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+}
+
+.products {
+  background-color: #fff;
+  min-width: 320px;
+  max-width: 500px;
+  height: 230px;
+  padding: 10px;
+  border-radius: 25px;
+  overflow: hidden;
+  min-width: 30%;
+  max-width: 80%;
+}
+.products .view-more {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.products .view-more .content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding-left: 20px;
+}
+.products .view-more .content h3 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+.products .view-more .content span {
+  color: var(--main-color);
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+}
+
+.products .view-more .content button {
+  background-color: #159fed;
+  width: fit-content;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+@media (max-width: 591px) {
+  .products {
+    height: 200px;
+    max-width: 90%;
+  }
+
+  .products .view-more .content button {
+    max-width: 80%;
+    font-size: 12px;
+    padding: 10px;
+  }
+}
+.products .view-more .content button:hover {
+  background-color: var(--main-color);
+}
+.products .view-more .img-holder {
+  width: 45%;
+  background-color: #cccac9;
+  border-radius: 25px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+.products .view-more .img-holder img {
+  max-width: 80%;
+  display: block;
+}
+.products.view-more:hover .img-holder img {
+  margin-left: 10px;
+}
+.customer {
+  color: #fff;
+}
+
+.customer .rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.customer .rate i {
+  color: goldenrod;
+  font-size: 18px;
+}
+.customer h1 {
+  letter-spacing: 1.1px;
+  margin-bottom: 30px;
+}
+.avatars-hloder {
+  display: flex;
+  gap: 15px;
+}
+.avatars-hloder .profile-holder {
+  width: 65px;
+  height: 65px;
+  background-color: #01101d;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.avatars-hloder .profile-holder img {
+  width: 100%;
+  transition: 0.3s;
+}
+.profile-holder:hover img {
+  transform: scale(1.1);
+}
+.profile-holder.one {
+  background-color: var(--third-color);
+}
+.profile-holder.tow {
+  background-color: var(--secondry-color);
+}
+.profile-holder.there {
+  background-color: white;
+}
+.profile-holder.four {
+  background-color: var(--fourth-color);
+}
+
+.manager {
+  flex: 1;
+  min-width: 30%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.manager-container {
+  width: 80%;
+  position: relative;
+}
+.manager .manager-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  width: 0.5px;
+  height: 100%;
+  background-color: #9aadf6;
+}
+
+.avatar-holder img {
+  width: 100%;
+  transition: 0.3s;
+}
+.avatar-holder {
+  background-color: #87acd6;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.avatar-holder:hover img {
+  transform: scale(1.05);
+}
+.manager .info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: white;
+}
+
+.manager .info p {
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+.manager .info span {
+  font-weight: 300;
+  color: #9aadf6;
+}
+.manager .info {
+  margin-bottom: 20px;
+}
+.title .descripe {
+  font-weight: 400;
+  font-size: 25px;
+  margin-top: 10px;
+  color: white;
+  margin-bottom: 20px;
+}
+.title > p {
+  color: #9aadf6;
+  width: 70%;
+}
+
+@media (max-width: 881px) {
+  .products-container {
+    gap: 50px;
+    justify-content: center;
+  }
+  .products,
+  .customer,
+  .manager {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .manager-container .info {
+    justify-content: center;
+  }
+  .line {
+    height: 0.5px;
+    width: 200px;
+  }
+  .customer .rate {
+    justify-content: space-around;
+  }
+  .title > p {
+    margin: 0 auto;
+    color: #9aadf6;
+    width: 70%;
+    text-align: center;
+  }
+  .manager .manager-container::after {
+    height: 0.5px;
+    width: 50%;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (max-width: 591px) {
+  .avatars-hloder .profile-holder {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.product-parent,
+.products .view-more .content button {
+  position: relative;
+}
+.fetch-data {
+  background-color: #159fed;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}

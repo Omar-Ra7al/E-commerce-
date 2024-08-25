@@ -1,0 +1,41 @@
+.box-swiper {
+  background-color: var(--third-color);
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.box-swiper .holder {
+  /* background-color: var(--fourth-color); */
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 50px;
+  /* margin-left: -500px; */
+  /* margin-left: -250px; */
+  margin-left: 0;
+  transition: 1s;
+}
+
+.box-swiper .holder img {
+  width: 200px;
+}
+
+.box-swiper i {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.box-swiper i.uil-arrow-right {
+  right: 0;
+}
+.box-swiper i.uil-arrow-left {
+  left: 0;
+}

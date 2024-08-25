@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="/css/products.css" />
+    <link rel="stylesheet" href="/css/admin.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+    <script src="/js/admin.js" defer></script>
+</head>
+
+<body>
+    <div class="over-lay">
+        <section class="login-form">
+            <a href="index.html"><i class="uil-times" title="Mian Page"></i></a>
+            <div class="logo-form">
+                <i class="uil-shopping-cart"></i>
+                <h3>Log in</h3>
+            </div>
+            <div class="input-box user">
+                <i class="uil-user"></i>
+                <input type="text" placeholder="ex@mail.com">
+            </div>
+            <div class="input-box pass">
+                <i class="uil-lock"></i>
+                <input type="password" placeholder="password">
+            </div>
+            <button class="login-btn">Login</button>
+        </section>
+    </div>
+
+    <div class="settings">
+        <div class="logo-holder">
+            <div class="logo">
+                <div class="icon-logo"><i class="uil-shopping-bag"></i></div>
+                <div class="text-logo">
+                    <p>Admin</p>
+                    <span>ecommerce</span>
+                </div>
+            </div>
+            <div class="bars">
+                <!-- <i class="uil-bars"></i> -->
+                <i class="uil-angle-left-b"></i>
+                <i class="uil-angle-right-b"></i>
+            </div>
+        </div>
+
+        <div class="dashboard">
+
+            <div class="settings-container">
+
+                <div class="box active create-dashboard">
+                    <i class="uil-create-dashboard"> </i>
+                    <p>Dashboard</p>
+                </div>
+                <a href="index.html">
+                    <div class="box">
+                        <i class="uil-home"> </i>
+                        <p>Home</p>
+                    </div>
+                </a>
+                <div class="box products">
+                    <div class="products-data">
+                        <i class="uil uil-archive"></i>
+                        <p>Products</p>
+                        <i class="uil-angle-down show-more-product"></i>
+                    </div>
+
+                    <ul>
+                        <li class="add-product">
+                            <p>Add Product</p>
+                        </li>
+                        <li class="delte-product">
+                            <p href>Delet Product</p>
+                        </li>
+                        <li class="products-settings">
+                            <p>Product Setting</p>
+                        </li>
+                        <li class="all-products">
+                            <p>Product list</p>
+                        </li>
+                        <li class="all-products product-parent">
+                            <div class="fetch-data"></div>
+
+                            <p> <a href="products.html">Product Page</a></p>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="box">
+                    <i class="uil uil-shopping-cart"></i>
+                    <p>Orders</p>
+                </div>
+                <div class="box">
+                    <!-- <i class="uil uil-exchange"></i> -->
+                    <i class="uil-arrow-growth"></i>
+                    <p>Statics</p>
+                </div>
+                <div class="box setting">
+                    <i class="uil uil-setting"></i>
+                    <p>settings</p>
+                </div>
+                <div class="login-singout">
+                    <div class="detail-container">
+                        <div class="img-holder">
+                            <img src="imgs/avatar.png" width="40px">
+                        </div>
+                        <div class="admin-name-mail">
+                            <h3>OMar Rahal</h3>
+                            <p>
+                                admin@gmail,com
+                            </p>
+                        </div>
+                        <div class="sing-out">
+                            <i id="sing-out" class="uil-signout"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="admin">
+        <div class="header">
+            <div class="serach">
+                <i class="uil-search"></i>
+                <input type="search" placeholder="Search" />
+            </div>
+            <div class="porfile-details">
+                <div class="icons">
+                    <i class="uil-brightness"></i>
+                    <i class="uil-bell"></i>
+                </div>
+                <img src="imgs/avatar.png" alt />
+            </div>
+        </div>
+        <div class="landing">
+            <div class="dashboard welcom">
+                <div class="title">
+                    <h1>Welcome <span class="admin-name">Omar</span> To Your Dashboard</h1>
+                </div>
+                <div class="details">
+                    <h3>Here You Have Acces In Your E-commerce </h3>
+                    <ul>
+                        <li>Add Proudct</li>
+                        <li>Remove Product</li>
+                        <li>See All proudcts</li>
+                        <li>etc..</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="view-by">
+        <!-- <i class="uil-align-alt"></i> -->
+        <i class="uil-align-center-justify" title="Show by"></i>
+    </div>
+
+    <div class="popUp-fill-feild">
+        <div class="logo">
+            <i class="uil-lock-open-alt"></i>
+        </div>
+        <p>Do not Forget to fill your <span>Email</span> and <span>PhoneNumber</span> to remember you if you forget
+            your
+            <span>Passowrd</span>
+        </p>
+        <a href="admin.html" target="_blank">Go to Admin Page</a>
+        <i class="uil-times"></i>
+        <div class="dont-show">
+            <p>Don't Remember Me Again <i class="uil-check"></i></p>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- make overlay for admin page when is opened and set login page if he type the user and passord remove over lay -->

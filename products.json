@@ -1,0 +1,347 @@
+{
+  "products": [
+
+    {
+      "id": "",
+      "name": "Denim Jeans",
+      "description": "Classic and durable, these denim jeans are a wardrobe staple.",
+      "price": 59.99,
+      "quantity": 25,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants4.png",
+        "imgs/imgsProduct/jogger-pants5.png",
+        "imgs/imgsProduct/jogger-pants5.png"
+      ]
+    },
+        {
+      "id": "shoe-5",
+      "name": "Sandals",
+      "description": "Light and breathable sandals for comfortable summer wear.",
+      "price": 29.99,
+      "quantity": 40,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-6.png",
+        "imgs/imgsProduct/shose-5.png",
+        "imgs/imgsProduct/shose-3.png"
+      ]
+    }
+    ,
+        {
+      "id": "",
+      "name": "Colorful Hoodie",
+      "description": "Make a statement with this trendy red and green hoodie.",
+      "price": 69.99,
+      "quantity": 75,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/purple-hoodi.png",
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png",
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png"
+      ]
+    }
+    ,
+    
+    {
+      "id": "",
+      "name": "Athletic Pants",
+      "description": "Designed for movement, these athletic pants are ideal for active days.",
+      "price": 37.99,
+      "quantity": 45,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants2.png",
+        "imgs/imgsProduct/jogger-pants3.png",
+        "imgs/imgsProduct/jogger-pants1.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Athletic Pants",
+      "description": "Designed for movement, these athletic pants are ideal for active days.",
+      "price": 37.99,
+      "quantity": 45,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants3.png",
+        "imgs/imgsProduct/jogger-pants1.png",
+        "imgs/imgsProduct/jogger-pants2.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Cargo Pants",
+      "description": "Stay stylish and comfortable with these rugged cargo pants.",
+      "price": 45.99,
+      "quantity": 30,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/Cargo2.png",
+        "imgs/imgsProduct/Cargo_pants.png",
+        "imgs/imgsProduct/Cargo_pants.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Classic White Sweatshirt",
+      "description": "Embrace comfort and style with this classic white sweatshirt.",
+      "price": 79.99,
+      "quantity": 75,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/black_hoodie_mockup.png",
+        "imgs/imgsProduct/purple-hoodi.png",
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Slim Fit Pants",
+      "description": "Sleek and modern, these slim fit pants are perfect for a sharp look.",
+      "price": 42.99,
+      "quantity": 35,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants5.png",
+        "imgs/imgsProduct/jogger-pants4.png",
+        "imgs/imgsProduct/jogger-pants4.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Black Hoodie",
+      "description": "A comfortable and stylish hoodie, perfect for casual wear.",
+      "price": 59.99,
+      "quantity": 100,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/purple-hoodi.png",
+        "imgs/imgsProduct/purple-hoodi.png",
+        "imgs/imgsProduct/psd_blue_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "shoe-1",
+      "name": "Running Shoes",
+      "description": "Comfortable and stylish running shoes perfect for daily exercise and casual wear.",
+      "price": 59.99,
+      "quantity": 30,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-2.png",
+        "imgs/imgsProduct/shose-3.png",
+        "imgs/imgsProduct/shose-2.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "White Sweatshirt",
+      "description": "Elevate your style with this versatile and comfortable hoodie.",
+      "price": 39.99,
+      "quantity": 50,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png",
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png",
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Sweatpants",
+      "description": "Cozy and perfect for lounging, these sweatpants are a must-have.",
+      "price": 29.99,
+      "quantity": 60,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants2.png",
+        "imgs/imgsProduct/jogger-pants2.png",
+        "imgs/imgsProduct/jogger-pants3.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Sweatpants",
+      "description": "Cozy and perfect for lounging, these sweatpants are a must-have.",
+      "price": 29.99,
+      "quantity": 60,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants3.png",
+        "imgs/imgsProduct/jogger-pants2.png",
+        "imgs/imgsProduct/jogger-pants2.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Slim Fit Pants",
+      "description": "Sleek and modern, these slim fit pants are perfect for a sharp look.",
+      "price": 42.99,
+      "quantity": 35,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/jogger-pants4.png",
+        "imgs/imgsProduct/jogger-pants4.png",
+        "imgs/imgsProduct/jogger-pants5.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Classic White Sweatshirt",
+      "description": "Embrace comfort and style with this classic white sweatshirt.",
+      "price": 79.99,
+      "quantity": 75,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/black_hoodie_mockup.png",
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png",
+        "imgs/imgsProduct/purple-hoodi.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Cargo Pants",
+      "description": "Stay stylish and comfortable with these rugged cargo pants.",
+      "price": 45.99,
+      "quantity": 30,
+      "category": "pants",
+      "images": [
+        "imgs/imgsProduct/Cargo_pants.png",
+        "imgs/imgsProduct/Cargo2.png",
+        "imgs/imgsProduct/Cargo_pants.png"
+      ]
+    },
+
+    {
+      "id": "",
+      "name": "Colorful Hoodie",
+      "description": "Make a statement with this trendy red and green hoodie.",
+      "price": 69.99,
+      "quantity": 75,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/purple-hoodi.png",
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png",
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "White Sweatshirt",
+      "description": "Elevate your style with this versatile and comfortable hoodie.",
+      "price": 39.99,
+      "quantity": 50,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png",
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png",
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "shoe-1",
+      "name": "Running Shoes",
+      "description": "Comfortable and stylish running shoes perfect for daily exercise and casual wear.",
+      "price": 59.99,
+      "quantity": 30,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-1.png",
+        "imgs/imgsProduct/shose-4.png",
+        "imgs/imgsProduct/shose-2.png"
+      ]
+    },
+    {
+      "id": "shoe-1",
+      "name": "Running Shoes",
+      "description": "Comfortable and stylish running shoes perfect for daily exercise and casual wear.",
+      "price": 59.99,
+      "quantity": 30,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-4.png",
+        "imgs/imgsProduct/shose-2.png",
+        "imgs/imgsProduct/shose-1.png"
+      ]
+    },
+    {
+      "id": "shoe-5",
+      "name": "Sandals",
+      "description": "Light and breathable sandals for comfortable summer wear.",
+      "price": 29.99,
+      "quantity": 40,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-5.png",
+        "imgs/imgsProduct/shose-6.png",
+        "imgs/imgsProduct/shose-3.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Black Hoodie",
+      "description": "A comfortable and stylish hoodie, perfect for casual wear.",
+      "price": 59.99,
+      "quantity": 100,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png",
+        "imgs/imgsProduct/black_hoodie_mockup.png",
+        "imgs/imgsProduct/psd_blue_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Black Hoodie",
+      "description": "A comfortable and stylish hoodie, perfect for casual wear.",
+      "price": 59.99,
+      "quantity": 100,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/black_hoodie_mockup.png",
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png",
+        "imgs/imgsProduct/psd_blue_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "shoe-1",
+      "name": "Running Shoes",
+      "description": "Comfortable and stylish running shoes perfect for daily exercise and casual wear.",
+      "price": 59.99,
+      "quantity": 30,
+      "category": "shoes",
+      "images": [
+        "imgs/imgsProduct/shose-1.png",
+        "imgs/imgsProduct/shose-3.png",
+        "imgs/imgsProduct/shose-1.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Blue Sweatshirt",
+      "description": "Stay cozy and fashionable with this vibrant blue hoodie.",
+      "price": 49.99,
+      "quantity": 50,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/psd_blue_hoodie_mockup.png",
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png",
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png"
+      ]
+    },
+    {
+      "id": "",
+      "name": "Blue Sweatshirt",
+      "description": "Stay cozy and fashionable with this vibrant blue hoodie.",
+      "price": 49.99,
+      "quantity": 50,
+      "category": "Sweatshirts",
+      "images": [
+        "imgs/imgsProduct/red_and_green_hoodie_mockup.png",
+        "imgs/imgsProduct/psd_blue_hoodie_mockup.png",
+        "imgs/imgsProduct/white_front_hoody_mockup-removebg.png"
+      ]
+    }
+  ]
+}
