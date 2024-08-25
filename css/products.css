@@ -7,9 +7,11 @@
   --hard-color: #10172a;
   --main-transition: 0.3s;
 }
+
 body {
   position: relative;
 }
+
 /* Start NavBar */
 nav {
   position: fixed;
@@ -18,6 +20,7 @@ nav {
   z-index: 110001;
   background-color: #01101d;
 }
+
 * {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -57,6 +60,7 @@ nav .container {
   border-radius: 5px;
   transition: var(--main-transition);
 }
+
 .login .cart i {
   font-size: 25px;
 }
@@ -74,6 +78,7 @@ nav .container {
   left: 5%;
   top: 75px;
 }
+
 .login .cart i {
   color: #fff;
 }
@@ -82,6 +87,7 @@ nav .container {
   transform: scale(1.051);
   box-shadow: 0 0 10px var(--main-color);
 }
+
 .login .cart span {
   content: "";
   position: absolute;
@@ -102,12 +108,15 @@ nav .container {
   0% {
     transform: scale(0.8);
   }
+
   35% {
     transform: scale(1.051);
   }
+
   75% {
     transform: scale(0.8);
   }
+
   100% {
     transform: scale(1);
   }
@@ -152,6 +161,7 @@ nav .container {
     top: 100%;
     min-height: 0vh !important;
   }
+
   .cart-data.full-width {
     top: 70px;
   }
@@ -169,6 +179,7 @@ nav .container {
 
   /* background-color: white; */
 }
+
 .cart-values {
   display: flex;
   width: 100%;
@@ -179,51 +190,62 @@ nav .container {
   background-color: var(--secondry-color);
   box-shadow: 0 0 6px #d72d2d !important;
 }
+
 .cart-values .products-container .product .product-img .img-container {
   justify-content: center;
 }
+
 .left {
   width: 70%;
   border-radius: 20px;
 }
+
 .free-shiping,
 .cart-title {
   background-color: #eee;
   padding: 20px;
   margin-bottom: 20px;
 }
+
 .free-shiping h1 {
   color: var(--third-color);
   text-transform: uppercase;
   font-size: 22px;
   margin-bottom: 10px;
 }
+
 .free-shiping p {
   color: #777;
   font-size: 15px;
 }
+
 .cart-title h1 {
   text-transform: uppercase;
   font-size: 22px;
 }
+
 .cart-values {
   display: flex;
   flex-wrap: wrap;
 }
+
 .cart-values .products-container {
   width: 40%;
   padding: 20px 0;
   overflow: visible;
 }
+
 .cart-values .products-container.view-medium .product-wrapper .product-title {
   align-items: center;
   text-align: center;
   justify-content: start;
   flex-direction: column;
 }
+
 .cart-values .products-container.view-medium .product-wrapper {
   height: 150px;
 }
+
 .cart-values .products-container.view-medium .product-wrapper .amount-holder {
   display: flex;
   justify-content: center;
@@ -237,15 +259,18 @@ nav .container {
   font-weight: 500;
   font-size: 14px;
 }
+
 .cart-values .amount-holder input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 .cart-values .amount-holder .amount {
   position: relative;
   width: 40%;
 }
+
 .cart-values .amount-holder .amount i {
   position: absolute;
   top: 50%;
@@ -253,14 +278,17 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 11px;
   cursor: pointer;
 }
+
 .cart-values .amount-holder .amount i.uil-plus {
   right: 5px;
   color: var(--third-color);
 }
+
 .cart-values .amount-holder .amount i.uil-minus {
   left: 5px;
   color: var(--secondry-color);
 }
+
 .cart-values .amount-holder .add-quantitey {
   cursor: pointer;
   max-width: 30%;
@@ -276,6 +304,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   /* border-right: 2px solid var(--hard-color); */
 }
+
 .cart-values .amount-holder input {
   text-align: center;
   width: 100%;
@@ -288,10 +317,12 @@ input[type="number"]::-webkit-inner-spin-button {
   outline: none;
   border: 1px solid var(--third-color);
 }
+
 .cart-values .amount-holder .amount.show-before::before {
   content: "MaxQuantity";
   display: block;
 }
+
 .cart-values .amount-holder .amount::before {
   display: none;
   position: absolute;
@@ -312,6 +343,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 45%;
   }
 }
+
 @media (max-width: 991px) {
   .cart-values .products-container {
     width: 45%;
@@ -330,25 +362,19 @@ input[type="number"]::-webkit-inner-spin-button {
   border-left: 2px solid var(--main-color);
   border-top: 2px solid var(--main-color);
   background-color: var(--five-color);
-  background-image: radial-gradient(
-      circle at center center,
+  background-image: radial-gradient(circle at center center,
       rgba(33, 33, 33, 0),
-      rgb(33, 33, 33)
-    ),
-    repeating-linear-gradient(
-      135deg,
+      rgb(33, 33, 33)),
+    repeating-linear-gradient(135deg,
       rgb(33, 33, 33) 0px,
       rgb(33, 33, 33) 1px,
       transparent 1px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      45deg,
+      transparent 4px),
+    repeating-linear-gradient(45deg,
       rgb(56, 56, 56) 0px,
       rgb(56, 56, 56) 5px,
       transparent 5px,
-      transparent 6px
-    ),
+      transparent 6px),
     linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
 }
 
@@ -357,34 +383,30 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 20px;
   transition: var(--main-transition);
 }
+
 .summary div:hover:not(:first-of-type) {
   transform: scale(1.03);
 }
 
 .summary-title {
-  background-image: radial-gradient(
-      circle at center center,
+  background-image: radial-gradient(circle at center center,
       rgba(33, 33, 33, 0),
-      rgb(33, 33, 33)
-    ),
-    repeating-linear-gradient(
-      135deg,
+      rgb(33, 33, 33)),
+    repeating-linear-gradient(135deg,
       rgb(33, 33, 33) 0px,
       rgb(33, 33, 33) 1px,
       transparent 1px,
-      transparent 4px
-    ),
-    repeating-linear-gradient(
-      45deg,
+      transparent 4px),
+    repeating-linear-gradient(45deg,
       rgb(56, 56, 56) 0px,
       rgb(56, 56, 56) 5px,
       transparent 5px,
-      transparent 6px
-    ),
+      transparent 6px),
     linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
 
   border-bottom: 1px solid var(--main-color) !important;
 }
+
 .summary .summary-title h1 {
   font-size: 25px;
   letter-spacing: 2px;
@@ -400,6 +422,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   justify-content: space-between;
 }
+
 .summary .sub-total .total-count {
   display: flex;
   align-items: center;
@@ -407,6 +430,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
   width: 70%;
 }
+
 .summary .sub-total .total-count span {
   display: block;
   line-height: 20px;
@@ -420,9 +444,11 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-left: 10px;
   font-weight: bold;
 }
+
 .summary .shiping-remind p {
   width: 70%;
 }
+
 .summary .shiping-remind span {
   background-color: var(--main-color);
 
@@ -431,13 +457,16 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 30%;
   text-align: end;
 }
+
 .summary .total p {
   width: 70%;
 }
+
 .summary span {
   text-align: end;
   width: 30%;
 }
+
 .summary .check-out button {
   width: 100%;
   height: 50px;
@@ -452,9 +481,11 @@ input[type="number"]::-webkit-inner-spin-button {
   .cart-container {
     flex-direction: column;
   }
+
   .left {
     width: 100%;
   }
+
   .right {
     border-radius: 20px;
     overflow: hidden;
@@ -470,15 +501,19 @@ input[type="number"]::-webkit-inner-spin-button {
   .summary-title {
     width: 100%;
   }
+
   .summary div {
     padding: 15px;
   }
+
   .summary .summary-title h1 {
     font-size: 20px;
   }
+
   .summary .sub-total {
     font-size: 14px;
   }
+
   .summary .sub-total .total-count span {
     line-height: 15px;
     text-align: center;
@@ -487,45 +522,56 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 10px;
     font-weight: 400;
   }
+
   .shipping-remind {
     display: flex;
     align-items: center;
   }
+
   .shipping-remind p {
     font-size: 10px;
     width: 70%;
   }
+
   .shipping-remind span {
     font-size: 14px;
   }
+
   .summary .total p {
     width: 70%;
     font-size: 14px;
   }
+
   .summary .total span {
     font-size: 14px;
   }
+
   .summary .tax p {
     font-size: 14px;
   }
+
   .summary .tax span {
     font-size: 14px;
   }
+
   .summary .check-out {
     width: 90%;
     margin: 0 auto;
   }
+
   .summary .check-out button {
     height: 30px;
     font-size: 14px;
     border-radius: 20px;
   }
 }
+
 /* End Cart Styling */
 
 .login button {
   width: fit-content !important;
 }
+
 .login i {
   position: absolute;
   top: 50%;
@@ -563,6 +609,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: space-between;
     padding: 10px;
   }
+
   .nav-holder div {
     position: relative;
     display: inline-block;
@@ -574,10 +621,12 @@ input[type="number"]::-webkit-inner-spin-button {
     transition: var(--main-transition);
     box-shadow: 0 0 2px var(--five-color);
   }
+
   .nav-holder div:hover {
     transform: scale(1.051);
     box-shadow: 0 0 10px var(--third-color);
   }
+
   .nav-holder div.cart span {
     content: "";
     position: absolute;
@@ -593,6 +642,7 @@ input[type="number"]::-webkit-inner-spin-button {
     align-items: center;
     justify-content: center;
   }
+
   .nav-holder div i {
     position: absolute;
     top: 50%;
@@ -603,6 +653,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--main-color);
   }
 }
+
 /* End Mobile Nav */
 
 /* Start Products and view by icon */
@@ -624,6 +675,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .view-by i {
   font-size: 25px;
 }
+
 .products-landing {
   width: 100vw;
   padding-bottom: 100px;
@@ -631,6 +683,7 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 80px 0;
   min-height: 100vh;
 }
+
 .products-container {
   width: 90%;
   display: flex;
@@ -639,16 +692,20 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 30px;
   overflow: hidden;
 }
+
 .products-container .product {
   width: 300px;
   transition: var(--main-transition);
 }
+
 .products-container .product:hover img {
   transform: scale(1.051);
 }
+
 .products-container .product:hover {
   transform: scale(1.019);
 }
+
 .products-container .product-wrapper {
   height: 550px;
   max-height: 75vh;
@@ -657,6 +714,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-top: 1px solid var(--third-color);
   overflow: hidden;
 }
+
 .products-container .product-wrapper .product-img {
   width: 100%;
   height: 50%;
@@ -665,111 +723,81 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   margin-bottom: 10px;
   overflow: hidden;
-  background-image: repeating-linear-gradient(
-      315deg,
+  background-image: repeating-linear-gradient(315deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      225deg,
+      transparent 12px),
+    repeating-linear-gradient(225deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      67.5deg,
+      transparent 12px),
+    repeating-linear-gradient(67.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      315deg,
+      transparent 12px),
+    repeating-linear-gradient(315deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      225deg,
+      transparent 12px),
+    repeating-linear-gradient(225deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      112.5deg,
+      transparent 12px),
+    repeating-linear-gradient(112.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      112.5deg,
+      transparent 12px),
+    repeating-linear-gradient(112.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      225deg,
+      transparent 12px),
+    repeating-linear-gradient(225deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      22.5deg,
+      transparent 12px),
+    repeating-linear-gradient(22.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      225deg,
+      transparent 12px),
+    repeating-linear-gradient(225deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      22.5deg,
+      transparent 12px),
+    repeating-linear-gradient(22.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      315deg,
+      transparent 12px),
+    repeating-linear-gradient(315deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      157.5deg,
+      transparent 12px),
+    repeating-linear-gradient(157.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      67.5deg,
+      transparent 12px),
+    repeating-linear-gradient(67.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
-    repeating-linear-gradient(
-      67.5deg,
+      transparent 12px),
+    repeating-linear-gradient(67.5deg,
       rgba(255, 255, 255, 0.04) 0px,
       rgba(255, 255, 255, 0.04) 1px,
       transparent 1px,
-      transparent 12px
-    ),
+      transparent 12px),
     linear-gradient(270deg, rgb(214, 227, 243), rgb(250, 227, 221));
   padding: 15px;
 }
@@ -782,6 +810,7 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: var(--main-transition);
   transition: 0.5s;
 }
+
 .products-container .product-img .img-container div {
   min-width: 100%;
   height: 100%;
@@ -789,6 +818,7 @@ input[type="number"]::-webkit-inner-spin-button {
   justify-content: center;
   align-items: center;
 }
+
 .products-container .product-wrapper .product-img img {
   transition: var(--main-transition);
   max-width: 90%;
@@ -798,10 +828,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   transition-delay: 0.2s;
 }
+
 .product-img {
   position: relative;
   width: 100%;
 }
+
 .product-img .arrow-container {
   position: absolute;
   top: 0;
@@ -809,12 +841,15 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 100%;
   z-index: 10000;
 }
+
 .product-img .arrow-container.right-new {
   right: 0;
 }
+
 .product-img .arrow-container.left-new {
   left: 0;
 }
+
 .product-img i {
   content: "";
   position: absolute;
@@ -825,15 +860,19 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
   transition: var(--main-transition);
 }
+
 .product-img:hover .arrow-container i {
   color: var(--hard-color);
 }
+
 .product-img .arrow-container:hover i {
   color: white;
 }
+
 .product-img i.uil-arrow-right {
   right: 0;
 }
+
 .product-img i.uil-arrow-left {
   left: 0;
 }
@@ -849,6 +888,7 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .products-container .product-wrapper .product-title {
   width: 100%;
   display: flex;
@@ -856,10 +896,12 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   overflow: hidden;
 }
+
 .products-container .product-wrapper .product-title h1 {
   font-size: 25px;
   font-weight: 500;
 }
+
 .products-container .product-wrapper .product-title span {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -867,12 +909,15 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--third-color);
   font-weight: 100;
 }
+
 .products-container .product-wrapper .product-description {
   width: 90%;
 }
+
 .products-container .product-wrapper .product-description p {
   font-size: 13px;
 }
+
 .products-container .product-wrapper .size {
   display: flex;
   justify-content: space-between;
@@ -904,6 +949,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: end;
 }
+
 .products-container .product-wrapper .ad-to-card button {
   width: 100%;
   padding: 10px;
@@ -914,6 +960,7 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: var(--main-transition);
   position: relative;
 }
+
 .products-container .product button i {
   position: absolute;
   margin-left: 5px;
@@ -928,44 +975,56 @@ input[type="number"]::-webkit-inner-spin-button {
   color: var(--third-color);
   transform: translateX(5px) translateY(-50%) scale(1.07);
 }
+
 .products-container .product button:hover i {
   /* transform: translateX(10px); */
   animation: addTocart 1s alternate-reverse infinite;
   color: var(--third-color);
 }
+
 .products-container.view-medium .product .product-img {
   width: 50%;
 }
+
 .products-container.view-medium .product-details {
   width: 50%;
 }
+
 .products-container.view-medium .product button {
   width: 100%;
 }
+
 .products-container.view-medium .product-img i,
 .products-container.view-small .product-img i {
   font-size: 25px;
 }
+
 @keyframes addTocart {
   0% {
     transform: translateX(0px) translateY(-50%) scale(1.07);
   }
+
   50% {
     transform: translateX(10px) translateY(-50%);
   }
+
   75% {
     transform: translateX(0px) translateY(-50%);
   }
+
   100% {
     transform: translateX(10px) translateY(-50%);
   }
+
   100% {
     transform: translateX(0px) translateY(-50%) scale(1.07);
   }
 }
+
 .products-container .product-wrapper .ad-to-card button:hover {
   box-shadow: 0 0 5px var(--main-color);
 }
+
 /* VIEW SMALL  */
 .products-container.view-small .product {
   width: 200px;
@@ -974,6 +1033,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .products-container.view-small .product-wrapper {
   height: 300px;
 }
+
 .products-container.view-small .product .product-img {
   margin: 0;
 }
@@ -986,38 +1046,47 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   height: 50%;
 }
+
 .products-container.view-small .product-wrapper .product-title {
   flex-direction: column;
   justify-content: space-between;
   height: 70%;
   overflow: visible;
 }
+
 .products-container.view-small .product-wrapper .product-title h1 {
   font-size: 18px;
   width: 100%;
   text-align: center;
   font-weight: 500;
 }
+
 .products-container.view-small .product-wrapper .product-price {
   width: 100%;
   text-align: center;
 }
+
 .products-container.view-small .product-wrapper .product-price span {
   font-size: 17px;
   font-weight: bolder;
 }
+
 .products-container.view-small .product-wrapper .product-description {
   display: none;
 }
+
 .products-container.view-small .product-wrapper .product-description p {
   font-size: 13px;
 }
+
 .products-container.view-small .product-wrapper .size {
   display: none;
 }
+
 .products-container.view-small .product-wrapper .add-to-card {
   height: 20%;
 }
+
 .products-container.view-small .product-wrapper .ad-to-card button {
   padding: 10px;
   border-radius: 15px;
@@ -1030,15 +1099,18 @@ input[type="number"]::-webkit-inner-spin-button {
 .products-container.view-medium .product {
   width: 330px;
 }
+
 .products-container.view-medium .product-wrapper {
   display: flex;
   height: 200px;
   border-left: 1px solid var(--third-color);
 }
+
 .products-container.view-medium .product-wrapper .product-img {
   height: 100%;
   min-width: 50%;
 }
+
 .products-container.view-medium .product-wrapper .product-details {
   height: 100%;
   min-width: 45%;
@@ -1047,27 +1119,34 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-left: 5px;
   padding-right: 10px;
 }
+
 .products-container.view-medium .product-wrapper .product-title {
   height: 60%;
 }
+
 .products-container.view-medium .product-wrapper .product-title h1 {
   font-size: 15px;
 }
+
 .products-container.view-medium .product-wrapper .product-title span {
   font-size: 13px;
 }
+
 .products-container.view-medium .product-wrapper .product-description p {
   font-size: 12px;
 }
+
 .products-container.view-medium .product-wrapper .size {
   font-size: 12px;
 }
+
 .products-container.view-medium .product-wrapper .size span {
   width: 20px;
   height: 20px;
   line-height: 20px;
   font-size: 10px;
 }
+
 .products-container.view-medium .product-wrapper .ad-to-card button {
   padding: 5px;
   border-radius: 10px;
@@ -1079,6 +1158,7 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 13px;
     font-weight: bolder;
   }
+
   .products-container.view-medium .product-wrapper .product-price span {
     font-size: 11px;
     font-weight: bolder;
@@ -1099,6 +1179,7 @@ input[type="number"]::-webkit-inner-spin-button {
   object-fit: cover;
   height: 100%;
 }
+
 /* End If no proudcts */
 
 /* End Products and view by icon */
@@ -1106,6 +1187,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .show-more {
   text-align: center;
 }
+
 .show-more button {
   background-color: var(--main-color);
   color: white;
@@ -1115,6 +1197,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   cursor: pointer;
 }
+
 .show-more button:hover {
   box-shadow: 0 0 5px var(--main-color);
 }
@@ -1130,9 +1213,11 @@ input[type="number"]::-webkit-inner-spin-button {
   gap: 10px;
   /* min-height: 100px; */
 }
+
 .ctegores button:first-of-type {
   text-align: center;
 }
+
 .ctegores button {
   padding: 10px;
   width: 120px;
@@ -1146,18 +1231,23 @@ input[type="number"]::-webkit-inner-spin-button {
   color: white;
   cursor: pointer;
 }
+
 .ctegores button.shoes {
-  background-image: url(/imgs/imgsProduct/shose-5.png);
+  background-image: url(imgsimgsProduct/shose-5.png);
 }
+
 .ctegores button.pants {
-  background-image: url(/imgs/imgsProduct/jogger-pants1.png);
+  background-image: url(imgsimgsProduct/jogger-pants1.png);
 }
+
 .ctegores button.Sweatshirts {
-  background-image: url(/imgs/imgsProduct/white_hoody_sweatshirt_mockup_template.png);
+  background-image: url(imgsimgsProduct/white_hoody_sweatshirt_mockup_template.png);
 }
+
 .ctegores button:hover {
   box-shadow: 0 0 5px var(--main-color);
 }
+
 .ctegores button.active {
   transform: scale(1.031);
   box-shadow: 0 0 5px var(--main-color);
