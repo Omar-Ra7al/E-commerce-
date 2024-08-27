@@ -7,3 +7,6 @@ I developed a fully functional and responsive e-commerce platform from scratch u
 - **Advanced Features:** Additional functionalities such as password updates, image management, and more, provide both users and admins with a comprehensive toolset.
 
 This project showcases my ability to build robust web applications with a focus on performance, usability, and maintainability.
+
+## Live Demo
+Check out the live demo of the project [here](https://omar-ra7al.github.io/E-commerce-/).
